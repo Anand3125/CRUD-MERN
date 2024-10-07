@@ -8,7 +8,7 @@ const EmpDetail = () => {
     const [empdata, empdatachange] = useState({});
 
     useEffect(() => {
-        fetch("http://localhost:3000/employee/" + empid).then((res) => {
+        fetch("https://crud-mern-alpha.vercel.app/" + empid).then((res) => {
             return res.json();
         }).then((resp) => {
             empdatachange(resp);
